@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Roboto', Courier, monospace;
+    color: white;
+}
+
+body {
+    background: linear-gradient(to top, rgba(38, 103, 187, 0.753), rgba(23, 0, 128, 0.952));
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.top-container { 
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.top-container div {
+    margin: .25rem;
+}
+
+#location {
+    font-size: 1rem;
+}
+
+#temp {
+    font-size: 2rem;
+}
+
+#description {
+    font-size: .9rem;
+}
+
+.forecast-container {
+    width: 100%;
+}
+
+.forecast-container div {
+    margin: .5rem;
+}
+
+.current-forecast {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 3rem;
+    padding: 1rem;
+    position: relative;
+    justify-content: space-evenly;
+    border-top: white solid 1px;
+}
+
+.current-forecast {
+    width: auto;
+}
+
+.details-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, 186px);
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    border-top: white solid 1px;
+}
+
+.details-container > div {
+    color: red;
+}
+
+.details-container > div > div {
+    font-size: 1.25rem;
+}
+
+#wind > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
