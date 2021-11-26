@@ -1,24 +1,22 @@
-///***** Portfolio readme.md*****///
+Hello! This is an app that gets and displays local weather information.
 
-Inspired by: https://jgabriel.eu/
+It's really simple and the code is messy, at best. 
 
-Resources I used to make this site:
+The API I used:
+https://www.weatherapi.com/
 
-https://logodix.com/ - logos
+Source for cloud icon:
+https://www.flaticon.com/
 
-https://freefrontend.com/ - useful templates
+Source for page loader:
+https://redstapler.co/add-loading-animation-to-website/
 
-https://getcssscan.com/css-box-shadow-examples - box shadow templates
+!!!
+This code currently has a jquery error so the API key has been removed for privacy >>details>> ( The API will not get called because the npm will not build the project, it won't build because of an reference error with jquery)
+If you wish to use this code, 
+navigate to the main.js file
+at the top under the /// API call /// comment
+change the last parameter to inclue the key like so:
+"x-rapidapi-key": "<!--KEY-->"
 
-https://redstapler.co/add-loading-animation-to-website/ - loading animation
-
-https://www.sliderrevolution.com/resources/css-text-animation/ - text animation
-
-https://formsubmit.co/ - form submission
-
-https://dev.to/anuradha9712/create-reusable-web-components-in-html-1llc - templates, shadow DOM, redux
-
-
-(code is a little messy)
-
-Legal Disclaimer: All trademarks, logos and brand names are the property of their respective owners. All company, product and service names used in this website are for identification purposes only. Use of these names,trademarks and brands does not imply endorsement.
+Set up to open on local host and you're good to go!
