@@ -75,11 +75,11 @@ body {
     border-top: white solid 1px;
 }
 
-.details-container > div {
-    color: red;
+.details-container > p {
+    color: lightgray;
 }
 
-.details-container > div > div {
+.details-container div {
     font-size: 1.25rem;
 }
 

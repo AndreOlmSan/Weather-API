@@ -1,6 +1,5 @@
 $(document).ready(() => {
 
-
     ///// Page Loader /////
     $(".loader-wrapper").fadeOut("slow")
 
@@ -21,7 +20,7 @@ $(document).ready(() => {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "weatherapi-com.p.rapidapi.com",
-                "x-rapidapi-key": ""
+                "x-rapidapi-key": config.API_KEY
             }
         }
         
@@ -48,7 +47,7 @@ $(document).ready(() => {
             const options = { hour: "numeric" }
             let time = parseInt(current.toLocaleTimeString("en-GB", options))
             let ampm = 'AM'
-            let index = 0
+            let index = time
             let timeplus1 = time + 1
             let timeplus2 = time + 2
             let timeplus3 = time + 3
@@ -62,7 +61,7 @@ $(document).ready(() => {
                 index = timeplus1
                 timeplus1 = timeplus1 - 12
                 ampm = 'PM'
-            }else{index = timeplus1}
+            }else{}
             let hour1 = timeplus1 + ampm
             let hour1Icon = response.forecast.forecastday[0].hour[index].condition.icon
             let hour1Temp = Math.round(response.forecast.forecastday[0].hour[index].temp_f) + '∘'
